@@ -1,0 +1,7 @@
+{
+  "name": "SoftDay",
+  "description": "A mindful space for everyday moments, featuring mood tracking, gentle nudges, and quiet reflections. Designed with a Japanese-inspired minimalist aesthetic.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SoftDay</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        "cream": "#FAF9F6",
+                        "cream-dark": "#F2F0EB",
+                        "charcoal": "#464340",
+                        "charcoal-soft": "#75706B",
+                        "paper": "#FDFBF7",
+                        "ink": "#463C38",
+                        "matcha": "#9CAD98",
+                        "matcha-dark": "#7E8F7A",
+                        "matcha-light": "#F1F4F1",
+                        "sakura": "#F2C9D1",
+                        "sakura-light": "#FDF6F7",
+                        "clay": "#DCBBA8",
+                        "sky": "#A8C8DB",
+                        "sky-light": "#F0F5F8",
+                        "stone": "#F2EFE9",
+                        "primary": "#7A7265",
+                        "background-light": "#F5F2EB",
+                        "card-light": "#FFFCF9",
+                        // Mood & Task Accents
+                        "accent-orange": "#E6A07E",
+                        "soft-peach": "#F9F1ED",
+                        "accent-green": "#8C9E8C",
+                        "soft-sage": "#F1F4F1",
+                        "accent-purple": "#A69CB0",
+                        "soft-lavender": "#F2F1F4",
+                        // Navigation & Card Backgrounds
+                        "wa-bg": "#FAF9F6",
+                        "wa-text": "#463C38",
+                        "wa-card": "#FDFBF7",
+                        "nav-inactive": "#B7AEA5"
+                    },
+                    fontFamily: {
+                        "sans": ["Noto Sans", "Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["DM Serif Display", "Noto Serif", "serif"],
+                        "wa": ["Zen Maru Gothic", "sans-serif"],
+                        "jp": ["Noto Serif JP", "serif"]
+                    },
+                    borderRadius: {
+                        "wa": "20px"
+                    },
+                    boxShadow: {
+                        "calm": "0 20px 40px -15px rgba(70, 67, 64, 0.05)",
+                        "soft": "0 8px 32px -8px rgba(122, 114, 101, 0.08)",
+                        "paper": "0 2px 10px rgba(58, 54, 51, 0.03)"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF9F6;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+        }
+        .texture-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAEKkqv4HYwF7jDPXuMXb9jTsVIxXL7oPmg_qK7i4vuG-G6_nEWqq_l7CDxILfm1B8MlS_GFcybtIgY6Lpdt9Jn7S5XNQ0RfiGiMh4WBojP7zFsoP_WwWEjqWezDJ5c171S_SO5uxOf8NifnWSNCnfEMQoHTa183yzwNJF2gVHzpMGT6t21vuZZ__9Btoq-yIxtfMymI0PdVOqQsRswn1Qvies5p7aOUBUTsYZdWd5szok7Ti6v3NtGDKq2uRz8hJOXUJKpQR6T_uj8);
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.1;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+    <div class="texture-overlay"></div>
+</body>
+</html>
